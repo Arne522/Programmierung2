@@ -1,11 +1,9 @@
-public class Expresso extends Beverage{
-    double cost = 1.25;
-    public Expresso( boolean mocha, boolean milk, boolean soy, boolean whip) {
-        super( mocha, milk, soy, whip);
-        description = "Expresso" + super.description;
+public class Expresso extends Beverage {
+    public String getDescription() {
+        return "Expresso";
     }
-    @Override
+
     public double cost() {
-        return cost+ super.cost();
+        return 1.75;
     }
 }

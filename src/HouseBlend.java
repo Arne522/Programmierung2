@@ -1,12 +1,9 @@
-public class HouseBlend extends Beverage{
-    double cost = 1;
-    public HouseBlend( boolean mocha, boolean milk, boolean soy, boolean whip) {
-        super( mocha, milk, soy, whip);
-        description = "Houseblend" + super.description;
+public class HouseBlend extends Beverage {
+    public String getDescription() {
+        return "Houseblend";
     }
 
-    @Override
     public double cost() {
-        return cost+ super.cost();
+        return 1.5;
     }
 }

@@ -1,23 +1,14 @@
-import QuackBehavior.Quackable;
 
-public class MallardDuck extends Duck implements Flyable, Quackable,Swimable{
+public class MallardDuck implements Duck {
+
     @Override
-    public void display() {
-        System.out.println("looks like a mallard");
+    public void quack() {
+        System.out.println("Quack");
     }
 
     @Override
     public void fly() {
-        System.out.println("Flap Flap");
+        System.out.println("Ich fliege.");
     }
 
-    @Override
-    public void quack() {
-        System.out.println("Quack Quack");
-    }
-
-    @Override
-    public void swim(){
-        System.out.println("Splash Splash");
-    }
 }
